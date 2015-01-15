@@ -73,7 +73,6 @@ public class JenkinsFinder {
 	// making public as this is meat method of this class and we really need
 	// to test this, also this is a handy method, can be used by anyone
 	public void findJenkinsByIp(InetAddress address) throws IOException {
-		// address =InetAddress.getByName("kvs-us-gold");
 		byte[] buffer = new byte[128];
 		String url = null;
 		Arrays.fill(buffer, (byte) 1);
